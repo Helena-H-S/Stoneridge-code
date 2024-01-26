@@ -76,14 +76,15 @@ body {
     /* Filtreerimiskastide konteineri stiilid */
     .filters {
         position: absolute;
-        top: 60%;
-        left: 16%;
-        transform: translateY(-50%);
+        bottom: 100px;
+        left: 20px;
         background-color: #c6e0eb;
         padding: 10px;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         z-index: 1000; /* Veenduge, et see oleks kaardi kohal */
+        width: 200px; /* Muuda filtrikasti laius */
+        height: auto; /* Kõrgus sõltub sisust */
     }
 
     /* Filtreerimiskastide stiilid */
@@ -140,4 +141,36 @@ body {
         color: red; 
         font-weight: bold;
     }
-    
+
+    /* Stiilid laiadele ekraanidele (näiteks lauaarvutid) */
+@media (min-width: 1024px) {
+    #map {
+        width: 70%;
+    }
+    .filters {
+        bottom: 10px;
+        left: 10px;
+    }
+}
+
+/* Stiilid keskmistele ekraanidele (näiteks tahvelarvutid) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    #map {
+        width: 90%;
+    }
+    .filters {
+        bottom: 10px;
+        left: 10px;
+    }
+}
+
+/* Stiilid väikestele ekraanidele (näiteks mobiiltelefonid) */
+@media (max-width: 767px) {
+    #map {
+        width: 100%;
+    }
+    .filters {
+        bottom: 10px;
+        left: 10px;
+    }
+}
