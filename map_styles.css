@@ -1,0 +1,143 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body stiilid */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #dfe7f5;
+    margin: 0;
+}
+
+/* Kaardi konteineri stiilid */
+#map {
+    position: relative;
+    height: 600px;
+    width: 70%;
+    margin: 100px auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer stiilid */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contact li {
+    margin: 0 10px;
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Popup stiilid */
+.leaflet-popup-content {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* Geocoder stiilid */
+.geocoder-control-form {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.geocoder-control-input {
+    width: 100%;
+}
+
+    /* Filtreerimiskastide konteineri stiilid */
+    .filters {
+        position: absolute;
+        top: 60%;
+        left: 16%;
+        transform: translateY(-50%);
+        background-color: #c6e0eb;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000; /* Veenduge, et see oleks kaardi kohal */
+    }
+
+    /* Filtreerimiskastide stiilid */
+    .filters label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: #333;
+    }
+
+    .filters input[type="checkbox"] {
+        margin-right: 5px;
+    }
+    .scania-color {
+        color: green;
+        font-weight: bold; 
+    }
+    
+    .volvo-color {
+        color: orange; 
+        font-weight: bold;
+    }
+    
+    .renault-color {
+        color: Turquoise; 
+        font-weight: bold;
+    }
+    
+    .volvo-group-color {
+        color: black; 
+        font-weight: bold;
+    }
+    
+    .man-color {
+        color: blue; 
+        font-weight: bold;
+    }
+    
+    .ford-color {
+        color: violet; 
+        font-weight: bold;
+    }
+    
+    .daimler-color {
+        color: purple; 
+        font-weight: bold;
+    }
+    
+    .daf-color {
+        color: brown; 
+        font-weight: bold;
+    }
+    .stoneridge-color {
+        color: red; 
+        font-weight: bold;
+    }
+    
